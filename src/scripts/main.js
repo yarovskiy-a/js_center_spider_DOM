@@ -1,10 +1,12 @@
 'use strict';
 
-const spidar = document.querySelector('.spider');
+const spider = document.querySelector('.spider');
 const wall = document.querySelector(`.wall`);
 
-wall.style.display = 'flex';
-wall.style.justifyContent = 'center';
-wall.style.alignItems = 'center';
+const xWall = wall.clientWidth;
+const yWall = wall.clientHeight;
+const xSpider = spider.clientWidth;
+const ySpider = spider.clientHeight;
 
-spidar.style.position = 'relative';
+spider.style.top = `${(xWall - xSpider) / 2}px`;
+spider.style.left = `${(yWall - ySpider) / 2}px`;
