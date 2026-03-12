@@ -8,5 +8,5 @@ const yWall = wall.clientHeight;
 const xSpider = spider.clientWidth;
 const ySpider = spider.clientHeight;
 
-spider.style.top = `${(xWall - xSpider) / 2}px`;
-spider.style.left = `${(yWall - ySpider) / 2}px`;
+spider.style.left = `${(xWall - xSpider) / 2}px`;
+spider.style.top = `${(yWall - ySpider) / 2}px`;
